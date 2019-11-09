@@ -7,8 +7,9 @@ function App() {
   return (
     <div className="container">
       <Navbar />
+      
       <Jumbotron />
-      <Card />
+     
     </div>
   );
 }
