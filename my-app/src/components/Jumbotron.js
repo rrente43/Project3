@@ -18,6 +18,7 @@ function Jumbotron() {
 			</div>
 			<div class="card-body">
 				<form>
+          
 					<div class="input-group form-group">
 						<div class="input-group-prepend">
 							<span class="input-group-text"><i class="fas fa-user"></i></span>
@@ -37,12 +38,17 @@ function Jumbotron() {
 					<div class="form-group">
 						<input type="submit" value="Login" class="btn float-right login_btn"/>
 					</div>
+          
 				</form>
 			</div>
-			<div class="card-footer">
-				<div class="d-flex justify-content-center links">
-					Don't have an account?<a href="#">Sign Up</a>
-				</div>
+            <div class="card-footer">
+              <div class="d-flex justify-content-center links">
+                Don't have an account?<a href="#">Sign Up</a></div>
+
+              <div class="d-flex justify-content-center links">
+                 
+                 Or Sign in using google.<a href="/auth/google" class="google-btn" >Google+</a>
+              </div>
 				
 			</div>
 		</div>
