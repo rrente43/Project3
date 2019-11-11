@@ -1,25 +1,29 @@
 # Project 3 
 
-# MyHome
+# Roommate Finder
 
 ## What does it do
+Our app Roommate Finder offers a unique way to find a roommate. A user can create a profile that will have a description of what they're looking for. Other users will be able to view other profiles and filter out what theyre looking for by.Our application will consist of two API's. Google auth to sign in and filestack to upload a profile picture. We want to create a database based on the information the user gives us to later retrive it for other users such as an email. If everything goes well, we want to add aditional search filters.
 
-It retrieves the sale price from each state and fetches the monthly sales prices in any given state and city. There is a user log in function to log in and save specific properties from the search, in the search users will be able to look up a specific city and state to get picture and info results for properties from the Zillow API. For the log in users can log in through google auth and that'll create an account on our app and it'll save users in our mongoDB. Once a user logs in, if they see a property they are interested in it'll save it to there saved homes page.
+### User Log In using mongoDB 
 
-## Why use our app
+### Google Auth w/ saved specific deep search results 
 
-MyHome offers a simplified searching experience when home buying, search the best offers and find a home you love, you can save the homes you are interested them and check them out when you're ready to pull the trigger on the purchase. 
 
+### Displays specific properties info and Photo
 ## Technologies Used 
 
-### MongoDB
+### Passport JS
 
 ### GoogleAuth
 
-### ZillowAPI
+### Filestack
 
 ### React 5
 
 ## WireFrame
 
-![Manager View - Options](./images/prj3wf.jpg)
+![Manager View - Options](./images/room.jpg)
+
+![Manager View - Options](./images/rm.jpg)
+
