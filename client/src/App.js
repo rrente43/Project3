@@ -18,13 +18,13 @@ function App() {
   return (
     <Router>
       <div className="container">
-        <Jumbotron />
-        <switch>
+        <Switch>
           <Route path="/auth/google">
             <google-btn/>
           </Route>
-          <Route exact path="/roommate" component={roommate} />
-        </switch>
+          <Route exact path="/Jumbotron" component={Jumbotron} />
+          <Route exact path="/roommate" component={roommates} />
+        </Switch>
       </div>
     </Router>
   );

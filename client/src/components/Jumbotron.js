@@ -4,9 +4,9 @@ import "../styles/Jumbotron.css";
 function Jumbotron() {
   return (
     <div className="jumbotron">
-      <h1>Find the Perfect Roomate Today !!</h1>
+      <h1>Find the Perfect Roommate Today !!</h1>
       <p>
-        roomate finder app
+        roommate finder app
       </p>
   
       <div class="container">
