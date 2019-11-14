@@ -12,6 +12,6 @@ const projectSchema = new Schema({
   // date: { type: Date, default: Date.now }
 });
 
-const Prj = mongoose.model("Prj", projectSchema);
+const Users = mongoose.model("Users", projectSchema);
 
-module.exports = Prj;
+module.exports = Users;
