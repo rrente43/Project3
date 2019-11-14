@@ -47,7 +47,7 @@ function Jumbotron() {
 
               <div class="d-flex justify-content-center links">
                  
-                 Or Sign in using google.<a href="/auth/google" class="google-btn" >Google+</a>
+                 Or Sign in using google.<a href="http://localhost:3001/auth/google/" class="google-btn" >Google+</a>
               </div>
 				
 			</div>
