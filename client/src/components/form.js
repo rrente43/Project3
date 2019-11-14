@@ -43,7 +43,8 @@ function form() {
                             <input type="password" class="form-control" id="inputPassword" placeholder="Password"></input>
                         </li>
                         <li>
-                            <input type="submit" value="Submit" />
+                            <input type="submit" value="Submit" onclick="location.href='/profile;"/>
+                            
                         </li>
                     </ul>
                 </form>
