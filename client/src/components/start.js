@@ -33,5 +33,5 @@ export  class Start extends React.Component {
     }
 }
 
-export default connect()(Start);
+export default Start;
 

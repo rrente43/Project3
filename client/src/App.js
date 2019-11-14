@@ -24,6 +24,7 @@ function App() {
           </Route>
           <Route exact path="/Jumbotron" component={Jumbotron} />
           <Route exact path="/roommate" component={roommates} />
+          <Route exact path="/start" component={start} />
         </Switch>
       </div>
     </Router>
