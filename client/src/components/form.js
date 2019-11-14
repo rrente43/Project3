@@ -12,7 +12,9 @@ function form() {
                     <ul class="form-style-1">
                         <li>
                         <label for="staticName" class="col-sm-2 col-form-label">Name</label>
-                        <input type="text" name="field1" class="field-divided" placeholder="First" /> 
+
+                        <input type="text" name="field1" class="field-divided" placeholder="First" />
+                    
                         <input type="text" name="field2" class="field-divided" placeholder="Last" /></li>
                         <li>
                             <label for="staticEmail" class="col-sm-2 col-form-label">Email</label>
