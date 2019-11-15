@@ -19,12 +19,12 @@ passport.use(
     //     if(currentUser){
     //         console.log('user is:', currentUser);
     //     }else{
-            new User({
-                username: profile.displayName,
-                googleId: profile.id
-            }).save().then((newUser)=>{
-            console.log('new user created'+ newUser);
-            });
+    //         new User({
+    //             username: profile.displayName,
+    //             googleId: profile.id
+    //         }).save().then((newUser)=>{
+    //         console.log('new user created'+ newUser);
+    //         });
     //     }
     // });
     

@@ -7,9 +7,9 @@ const userSchema = new Schema({
     googleId: String,
 });
 
+const User = mongoose.model('user', userSchema);
 
 
-
-module.exports = userSchema;
+module.exports = User;
 
 
