@@ -3,7 +3,7 @@ import Navbar from "./components/Navbar";
 import Jumbotron from "./components/Jumbotron";
 import Card from "./components/Card";
 import roommates from "./components/roommate";
-
+import server from "../../server";
 import {
   BrowserRouter as Router,
   Switch,
