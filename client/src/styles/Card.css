@@ -13,10 +13,11 @@ align-content: center;
 
 .card{
 height: 370px;
-margin-top: auto;
+margin-top: 10%;
 margin-bottom: auto;
 width: 400px;
 background-color: rgba(0,0,0,0.5) !important;
+border-color: transparent !important;
 }
 
 .social_icon span{
@@ -31,7 +32,9 @@ cursor: pointer;
 }
 
 .card-header h3{
-color: white;
+    -webkit-text-fill-color: #ebebeb; /* Will override color (regardless of order) */
+    -webkit-text-stroke-width: .5px;
+    -webkit-text-stroke-color: white;
 }
 
 
@@ -61,9 +64,11 @@ margin-right: 5px;
 }
 
 .login_btn{
-color: black;
-background-color: rgb(151, 211, 235);
+color: white !important;
+background-color: #418FDE !important;
 width: 100px;
+height: 47px;
+font-size: 18px;
 }
 
 .login_btn:hover{
