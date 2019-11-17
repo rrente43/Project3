@@ -1,5 +1,4 @@
 import React from "react";
-import Navbar from "./components/Navbar";
 import Jumbotron from "./components/Jumbotron";
 import Card from "./components/Card";
 import roommates from "./components/roommate";
@@ -26,7 +25,7 @@ function App()
             <google-btn/>
           </Route>
           {/* <Route exact path="/auth/google/redirect"/> */}
-          <Route exact path="/" component={Jumbotron} />
+          <Route exact path="/jumbotron" component={Jumbotron} />
           <Route exact path="/roommate" component={roommates} />
           <Route exact path="/form" component={form} />
         </Switch>
