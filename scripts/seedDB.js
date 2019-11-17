@@ -10,20 +10,15 @@ mongoose.connect(
 
 const userSeed = [
     {
-        UserName: "Jett34",
-        Password: "4thFireShadow",
-        FirstName: "Jedidiah",
-        LastName: "Garza",
-        DOB: "05/15/1995",
-        Gender: "Male",
-        Email: "JedGarza@Gmail.com",
-        date: new Date(Date.now())
+        userName: "Jett34",
+        password: "123456789",
+        email: "jedgarza@gmail.com"
     }
 ];
 
-db.Prj
+db.User
     .remove({})
-    .then(() => db.Prj.collection.insertMany(userSeed))
+    .then(() => db.User.collection.insertMany(userSeed))
     .then(data => {
         console.log(data.result.n + " records inserted!");
         process.exit(0);

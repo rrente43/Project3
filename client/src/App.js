@@ -2,9 +2,7 @@ import React from "react";
 import Jumbotron from "./components/Jumbotron";
 import Card from "./components/Card";
 import roommates from "./components/roommate";
-import form from "./components/form";
-// import queryString from "query-string";
-
+import server from "../../server";
 import {
   BrowserRouter as Router,
   Switch,
