@@ -1,7 +1,7 @@
 import React from "react";
 import {Navbar, Nav, ListGroup, Button, ButtonToolbar} from 'react-bootstrap';
 import MyModal from "./modal";
-
+import "../styles/roommate.css";
 
 
 function Roommates() {
@@ -10,7 +10,7 @@ function Roommates() {
       <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
         <Navbar.Brand href="#home">ATX Roomr</Navbar.Brand>
           <ButtonToolbar>
-            <MyModal />
+            <MyModal className="pull-right"/>
             {/* <Button onClick= {MyModal} variant="success">Create</Button> */}
           </ButtonToolbar>
       </Navbar>
