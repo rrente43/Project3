@@ -1,5 +1,5 @@
 import React from "react";
-import {Navbar, Nav, ListGroup, Button, ButtonToolbar} from 'react-bootstrap';
+import {Navbar, ListGroup, ButtonToolbar} from 'react-bootstrap';
 import MyModal from "./modal";
 import "../styles/roommate.css";
 

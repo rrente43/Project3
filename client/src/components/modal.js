@@ -1,5 +1,5 @@
 import React from "react";
-import {Modal, Button, ButtonToolbar, Col, Row, Form, FormGroup, Label, Input} from 'react-bootstrap';
+import {Modal, Button, ButtonToolbar, Col,Form,} from 'react-bootstrap';
 import "../styles/modal.css";
 
 

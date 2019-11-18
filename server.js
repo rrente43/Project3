@@ -1,5 +1,3 @@
-
-
 const express = require("express");
 const authRoutes =require('./routes/auth-routes');
 const profileRoutes =require('./routes/profile-routes');
@@ -60,10 +58,12 @@ app.get("/", authCheck, (req, res) => {
 
 
 // Connect to the Mongo DB
-var MONGODB_URI =process.env.MONGODB_URI || "mongodb://localhost/projectSchema";
-mongoose.connect(MONGODB_URI);
+mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/projectSchema");
+
+mongoose.connect(keys.mongodb.dbURI,()=>{
+  console.log('connected to mongodb');
+});
 // Start the API server
 app.listen(PORT, function() {
   console.log(`🌎  ==> API Server now listening on PORT ${PORT}!`);
 });
-
