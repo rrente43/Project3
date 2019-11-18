@@ -3,7 +3,7 @@ const UsersController = require("../../controllers/UsersController");
 const MongoClient = require('mongodb').MongoClient;
 
 
-// Matches with "/api/books"
+// Matches with "/api/jumbotron"
 router.route("/")
   .get(UsersController.findAll)
   .post(UsersController.create);

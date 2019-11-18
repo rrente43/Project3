@@ -14,11 +14,7 @@ passport.use(
     console.log('passport cb function fired');
     console.log(profile);
 
-    //check if user already exists in db
-    // User.findOne({googleId: profile.id}).then((currentUser)=>{
-    //     if(currentUser){
-    //         console.log('user is:', currentUser);
-    //     }else{
+    
             new User({
                 username: profile.displayName,
                 googleId: profile.id

@@ -14,6 +14,33 @@ var UserSchema = new Schema({
     trim: true,
     required: "Username is Required"
   },
+
+  fullName: {
+    type: String,
+    trim: true,
+    required: "fullName is Required"
+  }, 
+  email: {
+    type: String,
+    unique: true,
+    match: [/.+@.+\..+/, "Please enter a valid e-mail address"]
+  },
+  age: {
+    type: String,
+    trim: true,
+    required: "age is Required"
+  },  
+  gender: {
+    type: String,
+    trim: true,
+    required: "gender is Required",
+    validate: [
+      function(input){
+        return input.length >= 6;
+      }, 
+      "Must be 'Male', 'Female', 'Other'"
+    ]
+  }, 
   // `password` must be of type String
   // `password` will trim leading and trailing whitespace before it's saved
   // `password` is a required field and throws a custom error message if not supplied
@@ -33,11 +60,7 @@ var UserSchema = new Schema({
   // `email` must be unique
   // `email` must match the regex pattern below and throws a custom error message if it does not
   // You can read more about RegEx Patterns here https://www.regexbuddy.com/regex.html
-  email: {
-    type: String,
-    unique: true,
-    match: [/.+@.+\..+/, "Please enter a valid e-mail address"]
-  },
+  
   // `date` must be of type Date. The default value is the current date
   userCreated: {
     type: Date,
