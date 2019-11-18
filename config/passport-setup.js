@@ -7,7 +7,7 @@ const User = require('../models/user-model');
 passport.serializeUser((user, done) =>{
         done(null, user.id);
 });
-passport.serializeUser((id, done) =>{
+passport.deserializeUser((id, done) =>{
     User.findById(id).then((user) => {
       done(null, user);   
     });
