@@ -7,7 +7,7 @@ function Profile() {
                         <h3>Roomate </h3>
                         <p>Age</p>
                         <p>Gender</p>
-                        <p>Smoker</p>
+                        <p>Pets</p>
                         <p>Description:</p>
                         <a href="#"><i class="fa fa-dribbble"></i></a>
                         <a href="#"><i class="fa fa-twitter"></i></a>

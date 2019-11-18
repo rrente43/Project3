@@ -88,6 +88,8 @@ function MyModal() {
       <MyVerticallyCenteredModal
         show={modalShow}
         onHide={() => setModalShow(false)}
+        onClick={handleFormSubmit}
+        type="submit"
       />
     </ButtonToolbar>
   );
