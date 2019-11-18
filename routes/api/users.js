@@ -1,6 +1,5 @@
 const router = require("express").Router();
 const UsersController = require("../../controllers/UsersController");
-const MongoClient = require('mongodb').MongoClient;
 
 
 // Matches with "/api/books"
@@ -15,4 +14,4 @@ router
   .put(UsersController.update)
   .delete(UsersController.remove);
 
-// module.exports = router;
+module.exports = router;

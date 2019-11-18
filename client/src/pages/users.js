@@ -7,7 +7,6 @@ import { Col, Row, Container } from "../components/Grid";
 import { List, ListItem } from "../components/List";
 import { Input, TextArea, FormBtn } from "../components/Form";
 class userName extends Component {
-  
  Users = {
    userName: [],
    price: "",
@@ -24,17 +23,7 @@ class userName extends Component {
      )
      .catch(err => console.log(err));
  };
- // deleteuserName = id => {
- //   API.deleteuserName(id)
- //     .then(res => this.loaduserName())
- //     .catch(err => console.log(err));
- // };
- // handleInputChange = event => {
- //   const { name, value } = event.target;
- //   this.setUsers({
- //     [name]: value
- //   });
- // };
+
  handleFormSubmit = event => {
    event.preventDefault();
    if (this.Users.price && this.Users.address) {

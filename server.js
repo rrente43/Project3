@@ -1,6 +1,5 @@
 const express = require("express");
 const authRoutes =require('./routes/auth-routes');
-const profileRoutes =require('./routes/profile-routes');
 const passportSetup = require('./config/passport-setup');
 
 const mongoose = require("mongoose");
@@ -15,6 +14,13 @@ const PORT = process.env.PORT || 3001;
 // Define middleware here
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
+if (process.env.NODE_ENV === "production") {
+  app.use(express.static("client/build"));
+}
+// app.use(routes);
+
+app.use(passport.initialize());
+app.use(passport.session());
 
 app.use(cookieSession({
     maxAge: 24 * 60 * 60 * 1000,
@@ -22,19 +28,7 @@ app.use(cookieSession({
 
 }));
 
-// init pass
-
-app.use(passport.initialize());
-app.use(passport.session());
-
-// Serve up static assets (usually on heroku)
-if (process.env.NODE_ENV === "production") {
-  app.use(express.static("client/build"));
-}
-// Add routes, both API and view
-app.use('/auth', authRoutes);
-// app.use('/profile', profileRoutes);
-// app.use(routes);
+app.use("/auth", authRoutes);
 
 const authCheck = (req, res, next) => {
   if (!req.user) {
@@ -58,12 +52,13 @@ app.get("/", authCheck, (req, res) => {
 
 
 // Connect to the Mongo DB
-mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/projectSchema");
 
-mongoose.connect(keys.mongodb.dbURI,()=>{
-  console.log('connected to mongodb');
-});
+var MONGODB_URI =process.env.MONGODB_URI || "mongodb://localhost/projectSchema";
+mongoose.connect(MONGODB_URI);
 // Start the API server
 app.listen(PORT, function() {
   console.log(`🌎  ==> API Server now listening on PORT ${PORT}!`);
+});
+mongoose.connect(keys.mongodb.dbURI,()=>{
+  console.log('connected to mongodb');
 });
