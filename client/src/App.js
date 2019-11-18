@@ -2,9 +2,10 @@ import React from "react";
 import Jumbotron from "./components/Jumbotron";
 
 import roommates from "./components/roommate";
+
 import form from "./components/form";
-import profile from "./components/profile";
 // import queryString from "query-string";
+
 
 import {
   BrowserRouter as Router,
@@ -29,7 +30,7 @@ function App()
           <Route exact path="/" component={Jumbotron} />
           <Route exact path="/roommate" component={roommates} />
           <Route exact path="/form" component={form} />
-          <Route exact path="/profile" component={profile} />
+          {/* <Route exact path="/profile" component={profile} /> */}
         </Switch>
       </div>
     </Router>
