@@ -5,11 +5,13 @@ function form() {
     return (
         <div class="jumbotron jumbotron-fluid">
             <div class="container">
-                <div class="container">
-                    <h1>Fill Out Form!!!</h1>
-                </div>
+                    <div class="h1">Create Profile</div>
                 <form>
                     <ul class="form-style-1">
+                        <li>
+                        <label for="staticPassword" class="col-sm-2 col-form-label">Username</label>
+                            <input type="username" class="form-control" id="inputUsername" placeholder="Username"></input>
+                        </li>
                         <li>
                         <label for="staticName" class="col-sm-2 col-form-label">Name</label>
 
@@ -28,15 +30,7 @@ function form() {
                         </li>
                         <li>
                         <label for="staticGender" class="col-sm-2 col-form-label">Gender</label>
-                            <select name="field4" class="form-control">
-                                <option value="Advertise">Female</option>
-                                <option value="Partnership">Male</option>
-                                
-                            </select>
-                        </li>
-                        <li>
-                        <label for="staticEmail" class="col-sm-2 col-form-label">Message</label>
-                            <textarea name="field5" id="field5" class="form-control"></textarea>
+                            <input type="Gender" class="form-control" id="inputGender" placeholder="Male / Female"></input>
                         </li>
                         <li>
                         <label for="staticPassword" class="col-sm-2 col-form-label">Password</label>

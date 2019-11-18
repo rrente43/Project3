@@ -26,7 +26,7 @@ function App()
             <google-btn/>
           </Route>
           {/* <Route exact path="/auth/google/redirect"/> */}
-          <Route exact path="/jumbotron" component={Jumbotron} />
+          <Route exact path="/" component={Jumbotron} />
           <Route exact path="/roommate" component={roommates} />
           <Route exact path="/form" component={form} />
           <Route exact path="/profile" component={profile} />
