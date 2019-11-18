@@ -4,15 +4,21 @@ const db = require("../models");
 // This file empties the Books collection and inserts the books below
 
 mongoose.connect(
-    process.env.MONGODB_URI ||
+    process.env.MONGODB_URI || 
     "mongodb://localhost/projectSchema"
 );
 
 const userSeed = [
     {
-        userName: "Jett34",
-        password: "123456789",
-        email: "jedgarza@gmail.com"
+        username: "Jett34",
+        fullName: "Jedidiah Garza",
+        email: "jedgarza@gmail.com",
+        age: "24",
+        gender: "Male",
+        password: "12345678",
+        pets: "Yes",
+        occupation: "Tired"
+
     }
 ];
 

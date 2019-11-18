@@ -5,14 +5,14 @@ const MongoClient = require('mongodb').MongoClient;
 
 // Matches with "/api/jumbotron"
 router.route("/")
-  .get(UsersController.findAll)
-  .post(UsersController.create);
+  .get(usersController.findAll)
+  .post(usersController.create);
 
 // Matches with "/api/user/:id"
 router
   .route("/:id")
-  .get(UsersController.findById)
-  .put(UsersController.update)
-  .delete(UsersController.remove);
+  .get(usersController.findById)
+  .put(usersController.update)
+  .delete(usersController.remove);
 
 module.exports = router;

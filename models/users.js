@@ -82,3 +82,4 @@ var User = mongoose.model("User", UserSchema);
 
 // Export the User model
 module.exports = User;
+
