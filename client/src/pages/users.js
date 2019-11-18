@@ -7,10 +7,6 @@ import { Col, Row, Container } from "../components/Grid";
 import { List, ListItem } from "../components/List";
 import { Input, TextArea, FormBtn } from "../components/Form";
 class userName extends Component {
-<<<<<<< HEAD
-=======
-  
->>>>>>> 9e9d38d205d2722dafdacba987734b77b8924a6b
  Users = {
    userName: [],
    price: "",
