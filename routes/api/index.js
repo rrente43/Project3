@@ -1,14 +1,9 @@
 const router = require("express").Router();
-const UsersController = require("../../controllers/UsersController");
-const MongoClient = require('mongodb').MongoClient;
-// Matches with "/api/books"
-router.route("/")
- .get(UsersController.findAll)
- .post(UsersController.create);
-// Matches with "/api/user/:id"
-router
- .route("/:id")
- .get(UsersController.findById)
- .put(UsersController.update)
- .delete(UsersController.remove);
+const userRoutes = require("./users");
+const postRoutes = require("./post");
+
+// DB routes
+router.use("/users", userRoutes);
+router.use("/post", postRoutes);
+
 module.exports = router;
