@@ -33,7 +33,7 @@ if (process.env.NODE_ENV === "production") {
 }
 // Add routes, both API and view
 app.use('/auth', authRoutes);
-app.use('/profile', profileRoutes);
+// app.use('/profile', profileRoutes);
 // app.use(routes);
 
 // Connect to the Mongo DB
