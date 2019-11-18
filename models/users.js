@@ -56,6 +56,15 @@ var UserSchema = new Schema({
       "Password should be longer."
     ]
   },
+  pets: {
+    type: String,
+    trim: true
+  },
+  occupation: {
+    type: String,
+    trim: true,
+    required: "Please enter your occupation"
+  },
   // `email` must be of type String
   // `email` must be unique
   // `email` must match the regex pattern below and throws a custom error message if it does not
