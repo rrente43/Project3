@@ -7,7 +7,7 @@ function Jumbotron() {
 <div class= "row1">
     <div className="jumbotron">
       	<div class= "h1">
-		  ATX Roommate
+		  ATX Roomr
 		</div>
       	<div class="p">
         	Find the perfect roommate for you!
