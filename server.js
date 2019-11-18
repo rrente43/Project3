@@ -17,38 +17,38 @@ app.use(express.json());
 if (process.env.NODE_ENV === "production") {
   app.use(express.static("client/build"));
 }
-// app.use(routes);
+app.use(routes);
 
-app.use(passport.initialize());
-app.use(passport.session());
+// app.use(passport.initialize());
+// app.use(passport.session());
 
-app.use(cookieSession({
-    maxAge: 24 * 60 * 60 * 1000,
-    keys: [keys.session.cookieKey]
+// app.use(cookieSession({
+//     maxAge: 24 * 60 * 60 * 1000,
+//     keys: [keys.session.cookieKey]
 
-}));
+// }));
 
-app.use("/auth", authRoutes);
+// app.use("/auth", authRoutes);
 
-const authCheck = (req, res, next) => {
-  if (!req.user) {
-    res.status(401).json({
-      authenticated: false,
-      message: "user has not been authenticated"
-    });
-  } else {
-    next();
-  }
-};
+// const authCheck = (req, res, next) => {
+//   if (!req.user) {
+//     res.status(401).json({
+//       authenticated: false,
+//       message: "user has not been authenticated"
+//     });
+//   } else {
+//     next();
+//   }
+// };
 
-app.get("/", authCheck, (req, res) => {
-  res.status(200).json({
-    authenticated: true,
-    message: "user successfully authenticated",
-    user: req.user,
-    cookies: req.cookies
-  });
-});
+// app.get("/", authCheck, (req, res) => {
+//   res.status(200).json({
+//     authenticated: true,
+//     message: "user successfully authenticated",
+//     user: req.user,
+//     cookies: req.cookies
+//   });
+// });
 
 
 // Connect to the Mongo DB
@@ -59,6 +59,6 @@ mongoose.connect(MONGODB_URI);
 app.listen(PORT, function() {
   console.log(`🌎  ==> API Server now listening on PORT ${PORT}!`);
 });
-mongoose.connect(keys.mongodb.dbURI,()=>{
-  console.log('connected to mongodb');
-});
+// mongoose.connect(keys.mongodb.dbURI,()=>{
+//   console.log('connected to mongodb');
+// });
