@@ -34,4 +34,8 @@ module.exports = {
       .then(dbModel => res.json(dbModel))
       .catch(err => res.status(422).json(err));
   }
+<<<<<<< HEAD
 };
+=======
+};
+>>>>>>> 9e9d38d205d2722dafdacba987734b77b8924a6b
