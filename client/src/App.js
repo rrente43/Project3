@@ -3,6 +3,7 @@ import Jumbotron from "./components/Jumbotron";
 import Card from "./components/Card";
 import roommates from "./components/roommate";
 import form from "./components/form";
+import profile from "./components/profile";
 // import queryString from "query-string";
 
 import {
@@ -28,6 +29,7 @@ function App()
           <Route exact path="/jumbotron" component={Jumbotron} />
           <Route exact path="/roommate" component={roommates} />
           <Route exact path="/form" component={form} />
+          <Route exact path="/profile" component={profile} />
         </Switch>
       </div>
     </Router>
