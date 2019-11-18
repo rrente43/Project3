@@ -9,7 +9,7 @@ passport.serializeUser((user, done) =>{
 });
 passport.serializeUser((id, done) =>{
     User.findById(id).then((user) => {
-      done(null,user);   
+      done(null, user);   
     });
    
    
@@ -45,7 +45,7 @@ passport.use(
                     googleId: profile.id
                 }).save().then((newUser) =>{
                     console.log('new user created'+ newUser);
-                    done(null, newUser) 
+                    done(null, newUser);
                 });
             }
         });

@@ -18,7 +18,8 @@ router.get('/google', passport.authenticate('google',{
 
 //cb route for ggogle to redirect
 router.get('/google/redirect', passport.authenticate('google'),(req,res)=>{
-    res.send('you reached the cb uri');
+    req.user
+    res.send(req.user);
     
     
 });
