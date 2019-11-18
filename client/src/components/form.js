@@ -14,10 +14,8 @@ function form() {
                         </li>
                         <li>
                         <label for="staticName" class="col-sm-2 col-form-label">Name</label>
-
-                        <input type="text" name="field1" class="field-divided" placeholder="First" />
-                    
-                        <input type="text" name="field2" class="field-divided" placeholder="Last" /></li>
+                            <input type="password" class="form-control" id="inputName" placeholder="First / Last"></input>
+                        </li>
                         <li>
                             <label for="staticEmail" class="col-sm-2 col-form-label">Email</label>
                             
