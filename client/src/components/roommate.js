@@ -1,6 +1,7 @@
 import React from "react";
 import {Navbar, ListGroup, ButtonToolbar} from 'react-bootstrap';
 import MyModal from "./modal";
+import Profile from "../components/profile";
 import "../styles/roommate.css";
 
 
@@ -14,13 +15,57 @@ function Roommates() {
             {/* <Button onClick= {MyModal} variant="success">Create</Button> */}
           </ButtonToolbar>
       </Navbar>
-
-      <ListGroup variant="flush">
-      <ListGroup.Item>Cras justo odio</ListGroup.Item>
-      <ListGroup.Item>Dapibus ac facilisis in</ListGroup.Item>
-      <ListGroup.Item>Morbi leo risus</ListGroup.Item>
-      <ListGroup.Item>Porta ac consectetur ac</ListGroup.Item>
-      </ListGroup>
+    
+      <div class="container">
+      <br></br>
+  <div class="row">
+    <div class="col-sm">
+    <Profile></Profile>
+    </div>
+    
+    <div class="col-sm">
+    <Profile></Profile>
+    </div>
+    <div class="col-sm">
+    <Profile></Profile>
+    </div>
+  </div>
+  <br></br>
+  <div class="row">
+    <div class="col-sm">
+    <Profile></Profile>
+    </div>
+    
+    <div class="col-sm">
+    <Profile></Profile>
+    </div>
+    <div class="col-sm">
+    <Profile></Profile>
+    </div>
+  </div>
+  <br></br>
+  <div class="row">
+    <div class="col-sm">
+    <Profile></Profile>
+    </div>
+    
+    <div class="col-sm">
+    <Profile></Profile>
+    </div>
+    <div class="col-sm">
+    <Profile></Profile>
+    </div>
+  </div>
+</div>
+      
+      {/* <ListGroup variant="flush">
+      <ListGroup.Item>
+      <Profile></Profile>
+      </ListGroup.Item>
+      <ListGroup.Item> <Profile></Profile></ListGroup.Item>
+      <ListGroup.Item> <Profile></Profile></ListGroup.Item>
+      <ListGroup.Item> <Profile></Profile></ListGroup.Item>
+      </ListGroup> */}
     </div>
   );
 }
