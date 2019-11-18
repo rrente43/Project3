@@ -4,6 +4,8 @@ const passportSetup = require('./config/passport-setup');
 
 const mongoose = require("mongoose");
 const keys = require('./config/keys');
+const cookieSession = require('cookie-session');
+const passport = require('passport');
 
 const routes = require("./routes");
 const app = express();
@@ -12,6 +14,17 @@ const PORT = process.env.PORT || 3004;
 // Define middleware here
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
+
+app.use(cookieSession({
+    maxAge: 24 * 60 * 60 * 1000,
+    keys: [keys.session.cookieKey]
+
+}));
+
+// init pass
+
+app.use(passport.initialize());
+app.use(passport.session());
 
 // Serve up static assets (usually on heroku)
 if (process.env.NODE_ENV === "production") {
