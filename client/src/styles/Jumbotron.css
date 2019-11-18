@@ -1,5 +1,8 @@
 .jumbotron{
-    background-color: #90a6e0;
+    background-color: #90a6e0 !important;
+    margin-top: 50px;
+    
+
 }
 .google-btn{
     color: #fff;

@@ -43,11 +43,11 @@ function Jumbotron() {
 			</div>
             <div class="card-footer">
               <div class="d-flex justify-content-center links">
-                Don't have an account?<a href="#">Sign Up</a></div>
+                Don't have an account?<a href="/form">Sign Up</a></div>
 
               <div class="d-flex justify-content-center links">
                  
-                 Or Sign in using google.<a href="/auth/google" class="google-btn" >Google+</a>
+                 Or Sign in using google.<a href="http://localhost:3001/auth/google/" class="google-btn" >Google+</a>
               </div>
 				
 			</div>

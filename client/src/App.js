@@ -3,18 +3,23 @@ import Navbar from "./components/Navbar";
 import Jumbotron from "./components/Jumbotron";
 import Card from "./components/Card";
 import roommates from "./components/roommate";
-import server from "../../server";
+
+import form from "./components/form";
+// import queryString from "query-string";
+
+
 import {
   BrowserRouter as Router,
   Switch,
   Route,
-  Link,
-  Redirect,
-  useHistory,
-  useLocation
+  // Link,
+  // Redirect,
+  // useHistory,
+  // useLocation
 } from "react-router-dom";
 
-function App() {
+function App() 
+{
   return (
     <Router>
       <div className="container">
@@ -22,8 +27,10 @@ function App() {
           <Route path="/auth/google">
             <google-btn/>
           </Route>
-          <Route exact path="/Jumbotron" component={Jumbotron} />
+          {/* <Route exact path="/auth/google/redirect"/> */}
+          <Route exact path="/jumbotron" component={Jumbotron} />
           <Route exact path="/roommate" component={roommates} />
+          <Route exact path="/form" component={form} />
         </Switch>
       </div>
     </Router>
